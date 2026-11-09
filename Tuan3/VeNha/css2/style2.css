@@ -1,0 +1,83 @@
+/* i. Khung chứa lớn: kích thước: 1024px; margin; canh lề */
+#root {
+  width: 1024px;
+  margin: 30px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ii. site-header: canh lề; margin; background: màu, hình; màu; text-shadow */
+#site-header {
+  text-align: center;
+  margin: 0 0 30px 0;
+  background: #333333 url("imgs/logo.png") no-repeat center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+  padding: 40px 0;
+  font-size: 32px;
+  border-radius: 8px;
+}
+
+.superheroes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;                /* Sử dụng Flexbox để quản lý hàng ngang */
+  justify-content: center;      /* Căn giữa các thẻ */
+  gap: 10px;                    /* Khoảng cách đều giữa các ảnh */
+}
+
+.superheroes li {
+  width: 175px;                 /* Giảm kích thước mặc định xuống một chút */
+  position: relative;
+  vertical-align: top;
+  transition: width 0.3s ease;
+  text-align: left;
+}
+
+.superheroes img {
+  border: 3px solid #333333;
+  border-radius: 12px;
+  width: 100%;                  /* Đảm bảo ảnh tự co giãn theo thẻ li */
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.superheroes .hero-header {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.superheroes a {
+  display: none;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #555555;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* Khi rê chuột vào, tăng chiều rộng vừa phải để không bị tràn khung */
+.superheroes li:hover {
+  width: 205px; 
+}
+
+.superheroes li:hover a {
+  display: block;
+  text-decoration: underline;
+}

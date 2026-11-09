@@ -1,0 +1,93 @@
+/* i. Khung chứa lớn: kích thước: 960px; margin; font-size; background; padding */
+#root {
+  width: 960px;
+  margin: 20px auto;
+  font-size: 15px;
+  background-color: #e4e4e4;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ii. Header: font-size; canh lề */
+.header {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* iii. Description (mô tả lớn ở đầu): margin; background; padding; border */
+#root > .description {
+  margin: 15px 0 25px 0;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  padding: 18px 25px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.container .remark {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.heroes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* iv. Hero-item: width; display */
+.hero-item {
+  width: 23.5%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1.5%;
+  box-sizing: border-box;
+}
+
+.hero-item:last-child {
+  margin-right: 0;
+}
+
+/* v. H2 trong Hero-item: font-size; canh lề */
+.hero-item h2 {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 50px; /* Chừa khoảng trống để phần description đè lên hình */
+  color: #333;
+}
+
+/* vi. Description trong Hero-item: position; margin, font-size; background; height; canh lề; padding; border; z-index */
+.hero-item .description {
+  position: relative;
+  margin: 0;
+  font-size: 13px;
+  background-color: rgba(120, 120, 120, 0.92);
+  color: #ffffff;
+  height: 195px;
+  text-align: justify;
+  padding: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+/* vii. Hình trong Hero-item: position; cao; rộng; border */
+.hero-item img {
+  position: relative;
+  top: -55px;
+  left: 5%;
+  width: 90%;
+  height: 140px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  z-index: 1;
+  display: block;
+}

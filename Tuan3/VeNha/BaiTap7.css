@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  padding: 30px;
+}
+
+#wrapper {
+  width: 500px;
+  margin: 0 auto;
+  border: 3px solid #000;
+  padding: 12px;
+  box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+header, nav, main, footer {
+  border: 3px solid #000;
+  padding: 10px 15px;
+}
+
+header {
+  height: 70px;
+  margin-bottom: 12px;
+}
+
+header::before {
+  content: "header";
+}
+
+nav {
+  float: left;
+  width: 24%;
+  height: 300px;
+}
+
+nav::before {
+  content: "nav";
+}
+
+main {
+  float: right;
+  width: 73%;
+  height: 300px;
+}
+
+main::before {
+  content: "main";
+}
+
+footer {
+  clear: both;
+  height: 60px;
+  margin-top: 312px;
+}
+
+footer::before {
+  content: "footer";
+}
