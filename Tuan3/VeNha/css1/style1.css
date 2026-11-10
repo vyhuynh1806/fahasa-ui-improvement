@@ -58,7 +58,7 @@
 .hero-item h2 {
   font-size: 17px;
   text-align: center;
-  margin-bottom: 50px; /* Chừa khoảng trống để phần description đè lên hình */
+  margin-bottom: 50px;
   color: #333;
 }
 

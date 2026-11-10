@@ -25,13 +25,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;                /* Sử dụng Flexbox để quản lý hàng ngang */
-  justify-content: center;      /* Căn giữa các thẻ */
-  gap: 10px;                    /* Khoảng cách đều giữa các ảnh */
+  display: flex;                
+  justify-content: center;      
+  gap: 10px;                    
 }
 
 .superheroes li {
-  width: 175px;                 /* Giảm kích thước mặc định xuống một chút */
+  width: 175px;                
   position: relative;
   vertical-align: top;
   transition: width 0.3s ease;
@@ -41,7 +41,7 @@
 .superheroes img {
   border: 3px solid #333333;
   border-radius: 12px;
-  width: 100%;                  /* Đảm bảo ảnh tự co giãn theo thẻ li */
+  width: 100%;                  
   height: 220px;
   object-fit: cover;
   display: block;
@@ -72,7 +72,6 @@
   font-size: 14px;
 }
 
-/* Khi rê chuột vào, tăng chiều rộng vừa phải để không bị tràn khung */
 .superheroes li:hover {
   width: 205px; 
 }

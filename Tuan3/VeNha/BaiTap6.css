@@ -61,7 +61,6 @@ a {
   color: #399a94;
 }
 
-/* Sử dụng Flexbox để 3 ô luôn nằm trên 1 hàng ngang và căn đều */
 .portfolio .galerry {
   background-color: #ffffff;
   padding: 30px 20px;
@@ -74,7 +73,6 @@ a {
   list-style: none;
 }
 
-/* Khung màu xanh lá kích thước 350x260 giống hệt đề bài */
 .portfolio .galerry .box-img {
   width: 350px;
   height: 260px;

@@ -12,7 +12,6 @@ body {
   padding: 40px 20px;
 }
 
-/* Khung thẻ chứa thông tin cá nhân */
 .profile-card {
   max-width: 650px;
   margin: 0 auto;
@@ -23,7 +22,6 @@ body {
   text-align: center;
 }
 
-/* Ảnh đại diện / Logo */
 .avatar {
   width: 120px;
   height: 120px;
@@ -33,21 +31,18 @@ body {
   margin-bottom: 15px;
 }
 
-/* Tiêu đề họ tên */
 h1 {
   font-size: 24px;
   color: #005580;
   margin-bottom: 8px;
 }
 
-/* Thông tin phụ (Khoa/Trường) */
 .subtitle {
   color: #666;
   margin-bottom: 20px;
   font-size: 15px;
 }
 
-/* Các liên kết mạng xã hội (Social Links) */
 .social-links {
   margin-bottom: 30px;
 }
@@ -66,7 +61,6 @@ h1 {
   transform: translateY(-3px);
 }
 
-/* Danh sách các bài tập */
 .exercise-list {
   list-style: none;
   text-align: left;
