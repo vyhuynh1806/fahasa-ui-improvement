@@ -1,7 +1,7 @@
 
 // this variable has global scope
 var boxClass = 'movingDiv';
-
+0
 function outputBox(num) {
    var box = "<div class='" + boxClass + "' id='div" + num + "'>";
    box += "This is div " + num;
