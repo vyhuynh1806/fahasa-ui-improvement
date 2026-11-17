@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Labs – Portfolio</title>
+    <meta name="description"
+        content="Portfolio thực hành JavaScript: Lab 08, Lab 09, Lab 10 – Phát triển ứng dụng TMĐT, UEH.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Baloo 2, Space Mono, Be Vietnam Pro, Patrick Hand: đều có subset vietnamese -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Space+Mono:wght@400;700&family=Be+Vietnam+Pro:wght@400;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <svg width="0" height="0" aria-hidden="true">
+        <filter id="rough">
+            <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="4" />
+            <feDisplacementMap in="SourceGraphic" scale="16" />
+        </filter>
+    </svg>
+
+    <header class="hero">
+        <div class="bunting" id="bunting" aria-hidden="true"></div>
+        <div class="paper">
+            <span class="clip" aria-hidden="true"></span>
+            <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+                <defs>
+                    <path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" />
+                </defs>
+                <circle cx="100" cy="100" r="96" fill="#ff6a4d" />
+                <circle cx="100" cy="100" r="50" fill="#fbf8cf" />
+                <text font-family="Baloo 2" font-weight="800" font-size="23" fill="#fbf8cf" letter-spacing="3">
+                    <textPath href="#circ">JAVASCRIPT • LABS • UEH • 2026 •</textPath>
+                </text>
+                <text x="100" y="112" text-anchor="middle" font-family="Space Mono" font-weight="700" font-size="32"
+                    fill="#1f7fd1">&lt;/&gt;</text>
+            </svg>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hand">Xin chào, mình là Huỳnh Ngọc Phương Vy ☺</p>
+                    <h1>JS<br>Labs</h1>
+                    <p class="sub">Ba bài thực hành JavaScript: Lab08, Lab09, Lab10</p>
+                    <div class="row">
+                        <span class="sticker tag">developer đang lên level</span>
+                        <span class="year">2026</span>
+                    </div>
+                </div>
+                <figure class="stamp hero-photo">
+                    <span class="tape">Xin chào!</span>
+                    <img src="images/avatar.jpg" alt="Ảnh đại diện"
+                        onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'A'}))">
+                </figure>
+            </div>
+            <a class="arrow" href="#labs" aria-label="Xuống phần các bài Lab">➤</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <aside class="me">
+                <h2 class="name">Huỳnh Ngọc Phương Vy</h2>
+                <p class="role">Sinh viên TMĐT · UEH</p>
+                <ul class="contact">
+                    <li>🎓 MSSV: 31241026876</li>
+                    <li>🏫 Lớp học phần: 26C1INF50902701</li>
+                    <li>🐙 <a href="https://github.com/vyhuynh1806/fahasa-ui-improvement" target="_blank" rel="noopener">GitHub</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="about">
+                <h2 class="title">Giới thiệu</h2>
+                <p class="bluebox">
+                    Ba bài Lab này giúp mình đi từ chỗ viết được vài dòng JavaScript đến chỗ làm cho trang web biết phản
+                    ứng với người dùng.
+                    Nếu HTML là khung xương và CSS là diện mạo thì JavaScript chính là hành động: kiểm tra form đăng ký,
+                    cập nhật giỏ hàng, đổi nội dung sản phẩm hay tạo hiệu ứng khi khách rê chuột.
+                    Đó là những chức năng không thể thiếu của một website thương mại điện tử.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="chalk" id="labs">
+            <p class="hand big">Ba bài thực hành</p>
+            <h2 class="mega">JavaScript <b>LABS</b></h2>
+            <div class="cards">
+                <a class="card" href="Lab08/">
+                    <span class="n">08</span>
+                    <h3>Language Foundations</h3>
+                    <span
+                        class="pills"><em>Biến</em><em>Hàm</em><em>String</em><em>Date</em><em>Array</em><em>Object</em></span>
+                    <span class="open">Mở Lab 08</span>
+                </a>
+                <a class="card" href="Lab09/">
+                    <span class="n">09</span>
+                    <h3>DOM and Events</h3>
+                    <span class="pills"><em>DOM</em><em>click</em><em>mouseover</em><em>Form</em><em>Kiểm tra dữ
+                            liệu</em></span>
+                    <span class="open">Mở Lab 09</span>
+                </a>
+                <a class="card" href="Lab10/">
+                    <span class="n">10</span>
+                    <h3>jQuery</h3>
+                    <span
+                        class="pills"><em>Selectors</em><em>Events</em><em>Animation</em><em>GET</em><em>jqXHR</em></span>
+                    <span class="open">Mở Lab 10</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="learn">
+            <h2 class="title">Điều mình đã học</h2>
+            <div class="tabs" role="tablist">
+                <button role="tab" aria-selected="true" data-t="0">Lab 08</button>
+                <button role="tab" aria-selected="false" data-t="1">Lab 09</button>
+                <button role="tab" aria-selected="false" data-t="2">Lab 10</button>
+            </div>
+            <div class="note" id="note">
+                <p data-p="0">Viết lại bằng lời của bạn: những gì học được về cú pháp, biến, hàm, String, Date, Array,
+                    Object và Browser Console.</p>
+                <p data-p="1" hidden>Viết lại bằng lời của bạn: cách chọn và sửa phần tử, bắt sự kiện click, mouseover,
+                    mouseout và kiểm tra dữ liệu Form.</p>
+                <p data-p="2" hidden>Viết lại bằng lời của bạn: cách nạp jQuery, dùng selector, tạo hiệu ứng và gửi GET
+                    request, đọc kết quả qua jqXHR.</p>
+            </div>
+        </section>
+
+        <section class="reflect">
+            <h2 class="title">Tự đánh giá</h2>
+            <blockquote class="note">
+                Viết khoảng 100–150 từ: kiến thức quan trọng nhất, Lab hữu ích hoặc khó nhất và vì sao,
+                chức năng có thể làm cho website TMĐT (kiểm tra form đăng ký, giỏ hàng, cập nhật sản phẩm)
+                và kỹ năng cần cải thiện tiếp.
+            </blockquote>
+        </section>
+    </main>
+
+    <footer class="foot">Huỳnh Ngọc Phương Vy  · UEH · <a href="https://github.com/vyhuynh1806/fahasa-ui-improvement" target="_blank"
+            rel="noopener">GitHub</a></footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
