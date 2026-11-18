@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Góc học tập phong cách matcha latte: thông tin sinh viên, nội dung học hôm nay và bài tập thực hành.">
+  <title>Matcha Notes | Nhật ký học tập</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header container" id="dau-trang">
+    <a class="brand" href="#dau-trang" aria-label="Matcha Notes - trở về đầu trang">
+      <!-- Logo lớn: máy tính (từ 1024px) -->
+      <span class="brand-variant brand-desktop">
+        <span class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <path d="M9 18h22v8a11 11 0 0 1-22 0v-8Z" fill="#F4F0D9" stroke="currentColor" stroke-width="2"/>
+            <path d="M31 19h3a5 5 0 0 1 0 10h-3M7 34h29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 12c-3-4 3-6 0-10M24 12c-3-4 3-6 0-10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-title">matcha<span class="brand-dot">.</span>notes <small>your little study corner</small></span>
+      </span>
+
+      <!-- Logo vừa: tablet (640px - 1023px) -->
+      <span class="brand-variant brand-tablet">
+        <span class="brand-emblem" aria-hidden="true">🍵</span>
+        <span class="brand-title">matcha<span class="brand-dot">.</span></span>
+      </span>
+
+      <!-- Logo nhỏ: điện thoại (dưới 640px) -->
+      <span class="brand-variant brand-mobile">
+        <span class="mobile-mark" aria-hidden="true">m<span>.</span></span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#hom-nay">Hôm nay học gì?</a>
+      <a href="#bai-tap">Bài tập</a>
+    </nav>
+    <span class="header-tag"><span class="status-dot" aria-hidden="true"></span> Study with me</span>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> A LITTLE STUDY DIARY <span class="eyebrow-separator">/</span> <span id="todayDate">Hôm nay</span></p>
+        <h1 id="hero-title">Một chút <span>matcha,</span><br>một chút <em>code.</em></h1>
+        <p class="hero-description">Chào mừng đến với góc học tập nhỏ xinh của mình! Đây là nơi mình lưu lại thông tin cá nhân, những kiến thức đã học và bài tập thực hành hôm nay.</p>
+        <div class="topic-tags" aria-label="Các công nghệ đang học">
+          <span>✦ HTML</span>
+          <span>✦ CSS</span>
+          <span>✦ JavaScript</span>
+        </div>
+        <a class="primary-link" href="#hom-nay">Khám phá bài học <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="latte-panel" aria-label="Minh họa một ly matcha latte">
+        <div class="panel-decoration decoration-one" aria-hidden="true">✳</div>
+        <div class="panel-decoration decoration-two" aria-hidden="true">✧</div>
+        <div class="latte-illustration" aria-hidden="true">
+          <div class="cup-shadow"></div>
+          <div class="cup-handle"></div>
+          <div class="cup-outer">
+            <div class="cup-inside">
+              <div class="latte-leaf leaf-center"></div>
+              <div class="latte-leaf leaf-left"></div>
+              <div class="latte-leaf leaf-right"></div>
+              <div class="latte-stem"></div>
+              <span class="latte-shine"></span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-note floating-note-top"><span aria-hidden="true">♡</span> brewed with care</div>
+        <div class="floating-note floating-note-bottom"><strong>01</strong><span>sip, study,<br>repeat.</span></div>
+        <p class="latte-caption">sweet notes, fresh ideas <span aria-hidden="true">✿</span></p>
+      </div>
+    </section>
+
+    <section class="profile-section section-space container" id="gioi-thieu" aria-labelledby="profile-title">
+      <div class="section-heading">
+        <p class="section-kicker">01 / THE PERSON BEHIND THE NOTES</p>
+        <h2 id="profile-title">Một chút về <em>mình</em> <span aria-hidden="true">✿</span></h2>
+        <p>Góc giới thiệu nhỏ trước khi bắt đầu buổi học.</p>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-intro">
+          <div class="profile-avatar" aria-hidden="true">ME<span>✿</span></div>
+          <div>
+            <p class="profile-hello">HELLO, NICE TO MEET YOU!</p>
+            <h3>Student profile</h3>
+            <p>Mỗi ngày học thêm một điều mới 🌱</p>
+          </div>
+        </div>
+        <!-- Thay các dòng "Điền ..." dưới đây bằng thông tin thật của bạn -->
+        <div class="profile-grid">
+          <div class="profile-field"><span class="field-icon" aria-hidden="true">✿</span><div><span class="field-label">HỌ VÀ TÊN</span><strong>Điền họ và tên của bạn</strong></div></div>
+          <div class="profile-field"><span class="field-icon" aria-hidden="true">#</span><div><span class="field-label">MÃ SỐ SINH VIÊN</span><strong>Điền MSSV của bạn</strong></div></div>
+          <div class="profile-field"><span class="field-icon" aria-hidden="true">⌂</span><div><span class="field-label">LỚP</span><strong>Điền lớp của bạn</strong></div></div>
+          <div class="profile-field"><span class="field-icon" aria-hidden="true">✎</span><div><span class="field-label">LỚP HỌC PHẦN</span><strong>Điền lớp học phần</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lessons-section section-space" id="hom-nay" aria-labelledby="lessons-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">02 / TODAY'S LESSONS</p>
+          <h2 id="lessons-title">Hôm nay mình đã học <em>gì?</em></h2>
+          <p>Hai điều thú vị được ghi lại trong nhật ký học tập hôm nay.</p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card">
+            <div class="lesson-top"><span class="lesson-number">LESSON 01</span><span class="lesson-symbol dino-symbol" aria-hidden="true">🦖</span></div>
+            <h3>Hack game Dino của Chrome</h3>
+            <p>Mình đã học cách mở <strong>DevTools</strong> và sử dụng <strong>Console</strong> để khám phá, thay đổi cách hoạt động của trò chơi khủng long trên Chrome.</p>
+            <span class="lesson-label">Chrome DevTools <span aria-hidden="true">↗</span></span>
+          </article>
+
+          <article class="lesson-card second-lesson">
+            <div class="lesson-top"><span class="lesson-number">LESSON 02</span><span class="lesson-symbol" aria-hidden="true">▣</span></div>
+            <h3>Responsive &amp; logo linh hoạt</h3>
+            <p>Mình đã học cách dùng <strong>CSS media queries</strong> để giao diện tự thích ứng. Khi đổi kích thước màn hình, <strong>logo trên cùng sẽ thay đổi</strong> theo Desktop, Tablet hoặc Mobile.</p>
+            <span class="lesson-label">HTML + CSS + JavaScript <span aria-hidden="true">↗</span></span>
+          </article>
+        </div>
+
+        <div class="responsive-demo" aria-label="Minh họa responsive theo kích thước màn hình">
+          <div class="demo-description"><span class="demo-icon" aria-hidden="true">↔</span><div><h3>Thử thay đổi kích thước trình duyệt!</h3><p>Logo ở góc trên bên trái và thông tin bên cạnh sẽ tự cập nhật.</p></div></div>
+          <div class="demo-right">
+            <div class="breakpoint-list" aria-label="Các chế độ màn hình">
+              <span data-breakpoint="mobile">Mobile</span><span data-breakpoint="tablet">Tablet</span><span data-breakpoint="desktop">Desktop</span>
+            </div>
+            <p class="screen-caption" aria-live="polite"><span id="deviceIcon" aria-hidden="true">🖥️</span> <strong id="deviceType">Desktop</strong> <span class="screen-divider">·</span> <span id="screenWidth">-- px</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homework-section section-space container" id="bai-tap" aria-labelledby="homework-title">
+      <div class="homework-card">
+        <div class="homework-details">
+          <p class="section-kicker">03 / TIME TO PRACTICE</p>
+          <h2 id="homework-title">Bài tập <em>hôm nay</em> <span aria-hidden="true">✳</span></h2>
+          <p>Bấm vào nút bên dưới để mở bài thực hành đã làm trong buổi học.</p>
+          <a class="homework-link" href="Bai1.html">Mở bài tập Bai1.html <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="homework-art" aria-hidden="true"><span class="folder-tab"></span><span class="folder-body"><span class="folder-code">&lt; / &gt;</span><span class="folder-flower">✿</span></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Made with <span aria-hidden="true">♥</span> &amp; a cup of matcha.</p>
+    <p>© <span id="currentYear">2026</span> Matcha Notes · Keep blooming 🌿</p>
+  </footer>
+</body>
+</html>
