@@ -1,0 +1,16 @@
+{
+  "name": "cats-little-day",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cozy cat-themed Todo App with Express REST API and SQLite",
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "node --watch backend/server.js",
+    "start": "node backend/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

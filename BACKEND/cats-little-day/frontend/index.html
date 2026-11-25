@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf7ef">
+  <meta name="description" content="Cat's Little Day - Sổ tay công việc và khu vườn nuôi mèo đáng yêu.">
+  <title>Cat's Garden • Cat's Little Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="siteNav">
+      <a class="brand" href="index.html"><span class="brand-icon">🐱</span><span>Cat's Little Day<small>một ngày nhỏ của mèo ♡</small></span></a>
+      <span class="sidebar-caption">✿ LITTLE MENU</span>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a class="nav-link is-active" aria-current="page" href="index.html"><span class="nav-emoji">🏡</span> Cat's Garden <span class="nav-sparkle">✦</span></a>
+        <a class="nav-link" href="tasks.html"><span class="nav-emoji">📒</span> My Little Tasks</a>
+        <a class="nav-link" href="progress.html"><span class="nav-emoji">🌷</span> My Progress</a>
+      </nav>
+      <div class="sidebar-grow"></div>
+      <div class="sidebar-gift"><span class="gift-sparkle">✿</span><span class="gift-cat">🐈</span><strong>Một chút mỗi ngày</strong><p>Hoàn thành công việc, khu vườn sẽ càng đáng yêu hơn!</p><span class="dashed-heart">♡ ♡ ♡</span></div>
+      <p class="sidebar-footer">Made with <span>♥</span> & little paws</p>
+    </aside>
+    <div class="page-wrap">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenuToggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <span class="topbar-note">✿ Your cozy little corner</span>
+        <span class="topbar-right"><span class="today-label" data-today-date></span><span class="coins-pill">🪙 <b data-coins>0</b> xu</span></span>
+      </header>
+      <main class="page-content home-page">
+        <div class="page-heading"><div><span class="eyebrow">WELCOME TO YOUR HAPPY PLACE ✨</span><h1>Xin chào, ngày mới! <span class="wave">🌼</span></h1><p>Hôm nay mình cùng chăm mèo và hoàn thành vài điều nhỏ xinh nhé.</p></div><span class="title-doodle">✧ ˚ · . 🌿</span></div>
+        <div class="home-grid">
+          <section class="garden-panel card" aria-labelledby="gardenTitle">
+            <div class="panel-top"><div><span class="mini-label">☁️ YOUR LITTLE PARADISE</span><h2 id="gardenTitle">Khu vườn của Miu <span>🌷</span></h2></div><span class="garden-weather">☀️ Trời trong xanh</span></div>
+            <div class="garden-stage" id="gardenStage">
+              <div class="garden-cloud cloud-one"></div><div class="garden-cloud cloud-two"></div>
+              <span class="garden-sun">☀</span><span class="garden-butterfly">🦋</span>
+              <div class="garden-speech" id="catSpeech" aria-live="polite">Meow~ Một ngày thật xinh! ♡</div>
+              <img src="assets/cat-happy.svg" class="garden-cat" id="catImage" alt="Chú mèo Miu vui vẻ trong vườn">
+              <span class="garden-flower flower-one">🌼</span><span class="garden-flower flower-two">🌷</span><span class="garden-flower flower-three">🌻</span>
+              <div class="garden-particles" id="gardenParticles" aria-hidden="true"></div>
+            </div>
+            <div class="garden-bottom"><div class="cat-status"><span class="status-icon" id="moodIcon">💗</span><div><strong id="moodText">Miu đang vui vẻ!</strong><span id="moodSubtitle">Bé đang chờ bạn chơi cùng</span></div></div><div class="hunger-track"><div class="hunger-label"><span>🍓 Độ đói của Miu</span><b id="hungerValue">48%</b></div><div class="meter"><div class="meter-fill meter-pink" id="hungerBar" style="width:48%"></div></div></div></div>
+            <div class="garden-actions"><button class="btn btn-coral" id="feedCat" type="button">🍓 Cho ăn <span>−20 xu</span></button><button class="btn btn-cream" id="petCat" type="button">💗 Vuốt ve</button><button class="btn btn-lilac" id="napCat" type="button">🌙 Cho ngủ</button></div>
+          </section>
+          <div class="home-right">
+            <section class="daily-panel card" aria-labelledby="dailyTitle"><div class="section-heading"><div><span class="mini-label">MY HAPPY ROUTINE</span><h2 id="dailyTitle">Một ngày của bạn 🌤️</h2></div><span class="sticker">♡</span></div><p class="muted">Cùng hoàn thành từng điều nhỏ thôi!</p><div class="progress-donut-wrap"><div class="progress-donut" id="todayDonut" style="--progress:0%"><div><strong id="todayPercent">0%</strong><small>đã hoàn thành</small></div></div></div><div class="daily-count"><b id="todayDone">0</b> / <span id="todayTotal">0</span> việc hôm nay</div><div class="note-banner">⭐ Mỗi việc hoàn thành = <strong>+10 xu</strong></div><a class="btn btn-green full" href="tasks.html">Mở sổ tay công việc <span>↗</span></a></section>
+            <section class="quote-panel"><span class="quote-flower">🌸</span><p>“Slow days are still<br>beautiful days.”</p><span>Be gentle with yourself ♡</span></section>
+          </div>
+        </div>
+        <section class="home-tasks card"><div class="section-heading spaced"><div><span class="mini-label">TODAY'S LITTLE MISSIONS</span><h2>Việc nhỏ hôm nay <span>📝</span></h2></div><a class="text-link" href="tasks.html">Xem tất cả ↗</a></div><div class="home-task-list" id="homeTaskList" aria-live="polite"><p class="loading-line">Đang mở sổ tay...</p></div><form class="quick-form" id="quickForm"><label class="sr-only" for="quickTitle">Tên công việc mới</label><span>✎</span><input id="quickTitle" name="title" maxlength="100" placeholder="Thêm một việc nhỏ xinh hôm nay..." required autocomplete="off"><button class="btn btn-green" type="submit">+ Thêm việc</button></form></section>
+      </main>
+    </div>
+  </div>
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+</body>
+</html>
