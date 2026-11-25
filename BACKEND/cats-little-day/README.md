@@ -120,34 +120,68 @@ cats-little-day/
 
 ## 7. Hướng dẫn cài đặt và chạy
 
-**Bước 1:** Cài Node.js 22.13+ và mở thư mục **`cats-little-day`** (nơi có file `package.json`) trong VS Code.
+### Bước 1: Chuẩn bị môi trường
 
-**Bước 2:** Mở Terminal và chạy:
+- Cài đặt **Node.js phiên bản 22.13.0 trở lên**.
+- Mở thư mục **`cats-little-day`** trong VS Code (thư mục chứa file `package.json`).
+- Mở Terminal tại thư mục này.
+
+**Lưu ý:** Không chạy lệnh npm tại thư mục gốc `fahasa-ui-improvement` hoặc thư mục `BACKEND`. Phải chạy tại `BACKEND/cats-little-day`.
+
+### Bước 2: Cài đặt dependencies
+
+Mở Terminal và chạy:
 
 ```bash
 npm install
-npm run dev
 ```
 
-Trên **Windows PowerShell**, nếu bị chặn script `npm.ps1`, dùng:
+Trên **Windows PowerShell**, nếu gặp lỗi `npm.ps1 cannot be loaded because running scripts is disabled`, sử dụng:
 
 ```powershell
 npm.cmd install
+```
+
+### Bước 3: Khởi chạy ứng dụng
+
+Sau khi cài đặt hoàn tất, chạy:
+
+```bash
+npm run dev
+```
+
+Trên Windows PowerShell, sử dụng:
+
+```powershell
 npm.cmd run dev
 ```
 
-**Bước 3:** Truy cập **http://127.0.0.1:3000** để dùng website.
+Khi server khởi động thành công, truy cập:
 
-Nếu cổng 3000 đang được chương trình khác sử dụng, đổi cổng trên PowerShell:
+[http://127.0.0.1:3000](http://127.0.0.1:3000)
+
+Giữ Terminal chạy server trong suốt quá trình sử dụng ứng dụng.
+
+### Bước 4: Xử lý khi cổng 3000 đang được sử dụng
+
+Nếu cổng 3000 đang được chương trình khác sử dụng, có thể chuyển sang cổng 43127.
+
+Trên Windows PowerShell, chạy:
 
 ```powershell
-$env:PORT=43127
-npm.cmd start
+$env:PORT = "43127"; npm.cmd start
 ```
 
-Sau đó mở **http://127.0.0.1:43127**. Giữ Terminal chạy server trong lúc sử dụng ứng dụng.
+Sau đó truy cập:
 
-> **Lưu ý:** Không dùng Live Server hoặc mở HTML trực tiếp bằng `file://` để chạy chức năng CRUD và chăm mèo, vì các tính năng này cần Express API và SQLite.
+[http://127.0.0.1:43127](http://127.0.0.1:43127)
+
+### Lưu ý quan trọng
+
+- Không sử dụng Live Server để chạy ứng dụng.
+- Không mở trực tiếp file HTML bằng `file://`.
+- Các chức năng CRUD và chăm sóc mèo cần Express REST API và SQLite, do đó phải khởi chạy Backend trước khi sử dụng.
+- Không đóng Terminal đang chạy server. Để dừng server, nhấn `Ctrl + C`.
 
 ## 8. Kiểm thử
 
